@@ -14,41 +14,35 @@ const Hero: React.FC = () => {
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    // Animate background blobs
     tl.fromTo(bgBlobsRef.current?.children,
       { scale: 0, opacity: 0 },
       { scale: 1, opacity: 1, duration: 1.5, stagger: 0.2 }
     )
 
-      // Animate title with split text effect
       .fromTo(titleRef.current,
         { y: 50, opacity: 0 },
         { y: 0, opacity: 1, duration: 1 },
         '-=1'
       )
 
-      // Animate description
       .fromTo(descriptionRef.current,
         { y: 30, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.8 },
         '-=0.6'
       )
 
-      // Animate buttons
       .fromTo(buttonsRef.current?.children,
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.6, stagger: 0.2 },
         '-=0.4'
       )
 
-      // Animate users section
       .fromTo(usersRef.current,
         { x: -30, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.8 },
         '-=0.2'
       )
 
-      // Animate invoice card with a bounce effect
       .fromTo(invoiceCardRef.current,
         {
           y: 100,
