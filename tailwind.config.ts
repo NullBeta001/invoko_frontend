@@ -63,7 +63,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         invoko: {
-          purple: "#6E41E2",
+          purple: "#5821E1",
           "light-purple": "#E5DEFF",
           blue: "#55C1FF",
           "dark-purple": "#1A1F2C",

@@ -93,7 +93,7 @@ const Pricing: React.FC = () => {
 
           <PlanCard
             name="Equipe"
-            price="R$79"
+            price="Personalizado"
             description="Para pequenas equipes e agências."
             features={[
               "Tudo do plano Pro",
