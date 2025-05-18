@@ -39,7 +39,7 @@ Antes de começar, certifique-se de ter o **Node.js 18+** instalado.
 ### 1. Clone o projeto
 
 ```bash
-git clone https://github.com/seu-usuario/invoko.git
+git clone https://github.com/NullBeta001/invoko_frontend.git
 cd invoko
 ```
 
