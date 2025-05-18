@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# 🧾 Invoko – Gerador de Invoices para Desenvolvedores
 
-## Project info
+Crie invoices profissionais de forma simples e rápida. Pensado para freelancers, devs e pequenas equipes que querem focar no código, não na burocracia.
 
-**URL**: https://lovable.dev/projects/160ce885-8fdf-4fa5-bc8c-ca4117c70d26
+![Screenshot do App](./screenshot.png)
 
-## How can I edit this code?
+## ✨ Recursos
 
-There are several ways of editing your application.
+- 🎨 Modelos profissionais e personalizáveis
+- 📤 Envio automático de invoices por e-mail
+- 📊 Acompanhamento em tempo real de pagamentos
+- 📁 Exportação em PDF
+- ⚡ Interface animada com GSAP
+- 💨 Estilização moderna com Tailwind CSS
+- 🧱 Componentes reutilizáveis com shadcn/ui
+- 🔍 Filtros e organização por status: Rascunho, Enviado, Pago
+- 🔧 Integração futura com métodos de pagamento (PIX, Stripe, etc.)
 
-**Use Lovable**
+## 🚀 Demonstração
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/160ce885-8fdf-4fa5-bc8c-ca4117c70d26) and start prompting.
+> Veja a demo ao vivo: [https://invoko.com.br](https://invoko.com.br)  
+> Ou experimente localmente seguindo os passos abaixo.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tecnologias
 
-**Use your preferred IDE**
+Este projeto foi desenvolvido com:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GSAP](https://gsap.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📦 Instalação Local
 
-Follow these steps:
+Antes de começar, certifique-se de ter o **Node.js 18+** instalado.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 1. Clone o projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+git clone https://github.com/seu-usuario/invoko.git
+cd invoko
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 2. Instale as dependências
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
+```
+
+### 3. Inicie o ambiente de desenvolvimento
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Acesse `http://localhost:5173` no navegador.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Estrutura de Pastas
 
-**Use GitHub Codespaces**
+```bash
+src/
+├── assets/          # Ícones, imagens, etc.
+├── components/      # Componentes reutilizáveis
+├── views/           # Páginas principais (Home, Invoice, etc.)
+├── styles/          # Arquivos CSS (ex: tailwind.config.ts)
+├── utils/           # Funções auxiliares
+├── data/            # Dados mockados (sem backend ainda)
+└── main.tsx         # Ponto de entrada
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 💡 Exemplos de uso
 
-## What technologies are used for this project?
+- Criar um invoice para serviços de desenvolvimento
+- Gerar comprovantes de pagamento para clientes
+- Controlar status de cobranças em projetos freelancers
 
-This project is built with:
+## 🤔 FAQ
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**🧾 O Invoko emite notas fiscais?**  
+Ainda não, mas isso está no roadmap para integração futura com serviços externos.
 
-## How can I deploy this project?
+**🎨 Posso personalizar os modelos?**  
+Sim! Os modelos são personalizáveis e novos estilos estão em desenvolvimento.
 
-Simply open [Lovable](https://lovable.dev/projects/160ce885-8fdf-4fa5-bc8c-ca4117c70d26) and click on Share -> Publish.
+**🌍 Posso cobrar clientes internacionais?**  
+Sim, o app suporta múltiplas moedas manualmente por enquanto.
 
-## Can I connect a custom domain to my Lovable project?
+**🔁 É possível criar invoices recorrentes?**  
+Ainda não, mas essa é uma das prioridades do roadmap.
 
-Yes, you can!
+## 📄 Licença
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+> Feito com 💻 por desenvolvedores que preferem codar a preencher planilhas.
