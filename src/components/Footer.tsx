@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               Invoko
             </a>
             <p className="text-muted-foreground mb-4">
-              Simplifique sua emissão de faturas e foque no que realmente importa: seu desenvolvimento.
+              Simplifique sua emissão de invoices e foque no que realmente importa: seu desenvolvimento.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-invoko-purple">
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-bold text-lg mb-4 text-white">Produto</h3>
             <ul className="space-y-2">
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-muted-foreground hover:text-invoko-purple">Integrações</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-bold text-lg mb-4 text-white">Suporte</h3>
             <ul className="space-y-2">
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-muted-foreground hover:text-invoko-purple">Contato</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-bold text-lg mb-4 text-white">Empresa</h3>
             <ul className="space-y-2">
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-muted-foreground">
             &copy; {new Date().getFullYear()} Invoko. Todos os direitos reservados.

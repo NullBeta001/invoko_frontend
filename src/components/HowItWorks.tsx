@@ -27,7 +27,7 @@ const HowItWorks: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Emita faturas em <span className="text-invoko-purple">3 passos simples</span>
+            Emita invoices em <span className="text-invoko-purple">3 passos simples</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Transformamos um processo burocrático em algo que você pode concluir em minutos.
@@ -39,23 +39,23 @@ const HowItWorks: React.FC = () => {
             <Step
               number={1}
               title="Cadastre seus clientes"
-              description="Adicione os dados do cliente uma única vez e os reutilize em todas as suas faturas."
+              description="Adicione os dados do cliente uma única vez e os reutilize em todas os seus invoices."
             />
             <Step
               number={2}
-              title="Crie sua fatura"
+              title="Crie seu invoice"
               description="Selecione um modelo, adicione seus serviços e valores e personalize conforme necessário."
             />
             <Step
               number={3}
               title="Envie e acompanhe"
-              description="Envie a fatura por e-mail e acompanhe seu status até o pagamento."
+              description="Envie o invoice por e-mail e acompanhe seu status até o pagamento."
             />
           </div>
 
           <div className="neo-blur rounded-xl p-6 shadow-md border border-white/10">
             <div className="mb-4 flex justify-between items-center">
-              <h3 className="font-bold text-white">Nova Fatura</h3>
+              <h3 className="font-bold text-white">Novo Invoice</h3>
               <div className="text-sm bg-invoko-light-purple/30 text-invoko-purple px-3 py-1 rounded-full">
                 Rascunho
               </div>
@@ -87,7 +87,7 @@ const HowItWorks: React.FC = () => {
               </div>
 
               <button className="w-full bg-invoko-purple text-white py-2 rounded-lg font-medium">
-                Enviar Fatura
+                Enviar Invoice
               </button>
             </div>
           </div>

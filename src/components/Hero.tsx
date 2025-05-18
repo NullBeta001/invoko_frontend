@@ -57,7 +57,23 @@ const Hero: React.FC = () => {
           ease: 'back.out(1.2)'
         },
         '-=0.8'
-      );
+      )
+
+      .then(() => {
+        gsap.to(invoiceCardRef.current, {
+          y: '-15px',
+          rotation: 1,
+          duration: 1.5,
+          ease: 'power1.inOut',
+          yoyo: true,
+          repeat: -1,
+          repeatDelay: 0.2
+        });
+      });
+
+    return () => {
+      gsap.killTweensOf(invoiceCardRef.current);
+    };
   }, []);
 
   return (
@@ -70,10 +86,10 @@ const Hero: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div ref={contentRef} className="md:w-1/2 mb-10 md:mb-0 md:pr-8">
             <h1 ref={titleRef} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Faturas simples para <span className="text-invoko-purple">desenvolvedores</span>
+              Invoices simples para <span className="text-invoko-purple">desenvolvedores</span>
             </h1>
             <p ref={descriptionRef} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg">
-              Gere faturas profissionais sem complicação. Crie, envie e acompanhe seus pagamentos
+              Gere invoices profissionais sem complicação. Crie, envie e acompanhe seus pagamentos
               com uma plataforma feita para quem cria código.
             </p>
             <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-4">
@@ -84,7 +100,7 @@ const Hero: React.FC = () => {
                 Ver demonstração
               </Button>
             </div>
-            <div ref={usersRef} className="mt-8 flex items-center">
+            {/* <div ref={usersRef} className="mt-8 flex items-center">
               <div className="flex -space-x-2">
                 <img
                   src="https://randomuser.me/api/portraits/women/44.jpg"
@@ -105,15 +121,15 @@ const Hero: React.FC = () => {
               <p className="ml-4 text-sm text-muted-foreground">
                 <span className="font-bold text-white">500+</span> desenvolvedores já estão usando o Invoko
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="md:w-1/2">
             <div className="relative">
               <div ref={invoiceCardRef} className="glass-card rounded-2xl p-6 relative z-10">
                 <div className="flex justify-between items-center mb-6">
                   <div>
-                    <h3 className="text-xl font-bold">Fatura #0042</h3>
-                    <p className="text-muted-foreground">Para: Cliente Importante</p>
+                    <h3 className="text-xl font-bold">Invoice #0042</h3>
+                    <p className="text-muted-foreground">Para: Invoko LTDA</p>
                   </div>
                   <div className="bg-green-900/30 text-green-400 px-3 py-1 rounded-full text-sm font-medium border border-green-500/20">
                     Pago

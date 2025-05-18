@@ -33,7 +33,7 @@ const CTA: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-invoko-purple/40 to-invoko-blue/40 z-0"></div>
           <div ref={contentRef} className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Pronto para simplificar suas faturas?
+              Pronto para simplificar seus invoices?
             </h2>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-muted-foreground">
               Comece a usar o Invoko gratuitamente hoje e foque no que você faz de melhor: criar soluções incríveis.

@@ -20,15 +20,15 @@ const PlanCard: React.FC<PlanProps> = ({ name, price, description, features, isP
           Mais Popular
         </div>
       )}
-      
+
       <h3 className="text-xl font-bold mb-2 text-white">{name}</h3>
       <div className="mb-4">
         <span className="text-3xl font-bold text-white">{price}</span>
         {price !== 'Grátis' && <span className="text-muted-foreground">/mês</span>}
       </div>
-      
+
       <p className="text-muted-foreground mb-6">{description}</p>
-      
+
       <div className="space-y-3 mb-8">
         {features.map((feature, index) => (
           <div key={index} className="flex items-center">
@@ -37,8 +37,8 @@ const PlanCard: React.FC<PlanProps> = ({ name, price, description, features, isP
           </div>
         ))}
       </div>
-      
-      <Button 
+
+      <Button
         className={`w-full ${isPopular ? 'bg-invoko-purple hover:bg-opacity-90' : 'bg-secondary hover:bg-secondary/80 text-white'}`}
       >
         {buttonText}
@@ -59,29 +59,29 @@ const Pricing: React.FC = () => {
             Escolha o plano que melhor se adapta ao seu negócio. Sem taxas ocultas.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <PlanCard 
+          <PlanCard
             name="Gratuito"
             price="Grátis"
             description="Perfeito para freelancers começando agora."
             features={[
               "Até 3 clientes",
-              "Até 5 faturas por mês",
+              "Até 5 invoices por mês",
               "Modelos básicos",
               "Exportação em PDF",
               "Suporte por email"
             ]}
             buttonText="Começar Grátis"
           />
-          
-          <PlanCard 
+
+          <PlanCard
             name="Pro"
             price="R$29"
             description="Para freelancers em crescimento."
             features={[
               "Clientes ilimitados",
-              "Faturas ilimitadas",
+              "Invoices ilimitadas",
               "Modelos premium personalizáveis",
               "Integração com PIX",
               "Relatórios de pagamento",
@@ -90,8 +90,8 @@ const Pricing: React.FC = () => {
             isPopular={true}
             buttonText="Assinar Agora"
           />
-          
-          <PlanCard 
+
+          <PlanCard
             name="Equipe"
             price="R$79"
             description="Para pequenas equipes e agências."

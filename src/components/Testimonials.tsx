@@ -20,9 +20,9 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ quote, name, role, imgSrc
           ))}
         </div>
       </div>
-      
+
       <p className="text-muted-foreground mb-6">"{quote}"</p>
-      
+
       <div className="flex items-center">
         <img src={imgSrc} alt={name} className="w-10 h-10 rounded-full mr-4" />
         <div>
@@ -46,23 +46,23 @@ const Testimonials: React.FC = () => {
             Desenvolvedores como você já estão simplificando seu processo de faturamento.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <TestimonialCard 
-            quote="O Invoko me economizou horas de trabalho. Agora consigo criar faturas profissionais em minutos enquanto foco no que realmente importa: codar."
+          <TestimonialCard
+            quote="O Invoko me economizou horas de trabalho. Agora consigo criar invoices profissionais em minutos enquanto foco no que realmente importa: codar."
             name="Ana Silva"
             role="Desenvolvedora Frontend"
             imgSrc="https://randomuser.me/api/portraits/women/44.jpg"
           />
-          
-          <TestimonialCard 
+
+          <TestimonialCard
             quote="Como freelancer, eu odiava a parte burocrática. O Invoko simplificou todo o processo e ainda me ajuda a acompanhar os pagamentos."
             name="Pedro Santos"
             role="Desenvolvedor Full Stack"
             imgSrc="https://randomuser.me/api/portraits/men/32.jpg"
           />
-          
-          <TestimonialCard 
+
+          <TestimonialCard
             quote="A integração com pix facilitou demais o recebimento dos meus pagamentos. Meus clientes também elogiam a praticidade."
             name="Carolina Mendes"
             role="UX Designer & Dev"

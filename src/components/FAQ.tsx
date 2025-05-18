@@ -19,7 +19,7 @@ const FAQ: React.FC = () => {
             Tire suas dúvidas sobre o Invoko e como ele pode ajudar no seu negócio.
           </p>
         </div>
-        
+
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="neo-blur rounded-lg overflow-hidden">
@@ -27,51 +27,51 @@ const FAQ: React.FC = () => {
                 <span className="text-left font-medium text-white">O Invoko emite notas fiscais?</span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-muted-foreground">
-                Não, o Invoko é focado na geração de faturas (invoices) para cobrança. Para emissão de notas fiscais, 
-                você precisa utilizar o sistema da prefeitura da sua cidade ou estado. No entanto, 
-                o Invoko facilita o controle das suas faturas para posteriormente emitir as notas fiscais.
+                Não, o Invoko é focado na geração de Invoices (invoices) para cobrança. Para emissão de notas fiscais,
+                você precisa utilizar o sistema da prefeitura da sua cidade ou estado. No entanto,
+                o Invoko facilita o controle dos seus Invoices para posteriormente emitir as notas fiscais.
               </AccordionContent>
             </AccordionItem>
-            
+
             <AccordionItem value="item-2" className="neo-blur rounded-lg overflow-hidden">
               <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-black/20">
-                <span className="text-left font-medium text-white">Posso personalizar os modelos de fatura?</span>
+                <span className="text-left font-medium text-white">Posso personalizar os modelos de invoice?</span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-muted-foreground">
-                Sim! O plano gratuito oferece modelos básicos, enquanto o plano Pro permite personalização 
+                Sim! O plano gratuito oferece modelos básicos, enquanto o plano Pro permite personalização
                 completa com seu logotipo, cores da sua marca e campos personalizados.
               </AccordionContent>
             </AccordionItem>
-            
+
             <AccordionItem value="item-3" className="neo-blur rounded-lg overflow-hidden">
               <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-black/20">
                 <span className="text-left font-medium text-white">Como funciona a integração com métodos de pagamento?</span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-muted-foreground">
-                O Invoko permite adicionar instruções de pagamento para transferências bancárias, 
-                dados PIX, ou até mesmo integrar com gateways de pagamento como Stripe para aceitar 
-                cartões de crédito diretamente nas faturas (disponível no plano Pro).
+                O Invoko permite adicionar instruções de pagamento para transferências bancárias,
+                dados PIX, ou até mesmo integrar com gateways de pagamento como Stripe para aceitar
+                cartões de crédito diretamente nas Invoices (disponível no plano Pro).
               </AccordionContent>
             </AccordionItem>
-            
+
             <AccordionItem value="item-4" className="neo-blur rounded-lg overflow-hidden">
               <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-black/20">
                 <span className="text-left font-medium text-white">Posso usar o Invoko para cobrar clientes internacionais?</span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-muted-foreground">
-                Absolutamente! O Invoko suporta múltiplas moedas e formatos de fatura adaptados para clientes 
-                internacionais. Você pode configurar idiomas diferentes e incluir informações específicas 
+                Absolutamente! O Invoko suporta múltiplas moedas e formatos de invoices adaptados para clientes
+                internacionais. Você pode configurar idiomas diferentes e incluir informações específicas
                 exigidas por outros países.
               </AccordionContent>
             </AccordionItem>
-            
+
             <AccordionItem value="item-5" className="neo-blur rounded-lg overflow-hidden">
               <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-black/20">
-                <span className="text-left font-medium text-white">É possível criar faturas recorrentes?</span>
+                <span className="text-left font-medium text-white">É possível criar Invoices recorrentes?</span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-muted-foreground">
-                Sim, no plano Pro você pode configurar faturas recorrentes para clientes com contratos 
-                mensais ou outros períodos. O sistema enviará automaticamente as faturas nas datas programadas.
+                Sim, no plano Pro você pode configurar Invoices recorrentes para clientes com contratos
+                mensais ou outros períodos. O sistema enviará automaticamente as Invoices nas datas programadas.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
